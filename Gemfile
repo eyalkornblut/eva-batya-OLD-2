@@ -44,5 +44,8 @@ end
 group :development, :test do
 	gem 'sqlite3'
 end
+group :production do
+	gem "pg", "~> 0.14.0"
+end
 
 gem 'spree', '~> 1.1.2'
