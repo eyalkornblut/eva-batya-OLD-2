@@ -1,0 +1,12 @@
+development: &DEFAULTS
+  bucket: "eva-batya"
+  access_key_id: "AKIAJVPADJAJIZZWVB7Q"
+  secret_access_key: "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"
+
+test:
+  <<: *DEFAULTS
+  bucket: "eva-batya"
+
+production:
+  <<: *DEFAULTS
+  bucket: "eva-batya"
