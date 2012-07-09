@@ -49,5 +49,6 @@ group :production do
 end
 
 gem 'spree', '~> 1.1.2'
+gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 # gem 'spree_heroku', '1.0.0', :git => 'git://github.com/paxer/spree-heroku.git'
 gem 'aws-s3'
