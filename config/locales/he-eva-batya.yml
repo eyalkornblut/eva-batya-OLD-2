@@ -1172,6 +1172,8 @@ he-eva-batya:
         index:
           new_content: תוכן חדש
           listing_contents: תכנים
+  comments: הערות
+  add_comment: הוסף הערה
   spree_gateway_error_flash_for_checkout: "There was a problem with your payment information. Please check your information and try again."
   ssl_will_be_used_in_development_and_test_modes: "SSL will be used in development and test mode if necessary."
   ssl_will_be_used_in_production_mode: "SSL will be used in production mode"
