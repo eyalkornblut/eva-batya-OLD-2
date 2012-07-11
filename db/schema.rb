@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120705113575) do
+ActiveRecord::Schema.define(:version => 20120710211040) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -92,6 +92,28 @@ ActiveRecord::Schema.define(:version => 20120705113575) do
     t.datetime "updated_at",      :null => false
   end
 
+  create_table "spree_comment_types", :force => true do |t|
+    t.string   "name"
+    t.string   "applies_to"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "spree_comments", :force => true do |t|
+    t.string   "title",            :limit => 50, :default => ""
+    t.text     "comment",                        :default => ""
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.integer  "user_id"
+    t.datetime "created_at",                                     :null => false
+    t.datetime "updated_at",                                     :null => false
+    t.integer  "comment_type_id"
+  end
+
+  add_index "spree_comments", ["commentable_id"], :name => "index_comments_on_commentable_id"
+  add_index "spree_comments", ["commentable_type"], :name => "index_comments_on_commentable_type"
+  add_index "spree_comments", ["user_id"], :name => "index_comments_on_user_id"
+
   create_table "spree_configurations", :force => true do |t|
     t.string   "name"
     t.string   "type",       :limit => 50
@@ -100,6 +122,23 @@ ActiveRecord::Schema.define(:version => 20120705113575) do
   end
 
   add_index "spree_configurations", ["name", "type"], :name => "index_configurations_on_name_and_type"
+
+  create_table "spree_contents", :force => true do |t|
+    t.integer  "page_id"
+    t.string   "title"
+    t.text     "body"
+    t.string   "link"
+    t.string   "link_text"
+    t.string   "context"
+    t.boolean  "hide_title",              :default => false
+    t.integer  "position",                :default => 999
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
+  end
 
   create_table "spree_countries", :force => true do |t|
     t.string  "iso_name"
@@ -232,6 +271,20 @@ ActiveRecord::Schema.define(:version => 20120705113575) do
   end
 
   add_index "spree_orders", ["number"], :name => "index_orders_on_number"
+
+  create_table "spree_pages", :force => true do |t|
+    t.string   "title"
+    t.string   "nav_title"
+    t.string   "path"
+    t.string   "meta_title"
+    t.string   "meta_description"
+    t.string   "meta_keywords"
+    t.integer  "position",         :default => 999
+    t.boolean  "accessible",       :default => true
+    t.boolean  "visible",          :default => true
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+  end
 
   create_table "spree_payment_methods", :force => true do |t|
     t.string   "type"

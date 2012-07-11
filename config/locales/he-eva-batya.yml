@@ -1159,6 +1159,19 @@ he-eva-batya:
   spree: 
     date: Date
     time: Time
+    admin:
+      shared:
+        contents_tab:
+          content: תוכן
+      subnav:
+        uploads: העלאות
+      pages: 
+        index:
+          new_page: עמוד חדש
+      contents: 
+        index:
+          new_content: תוכן חדש
+          listing_contents: תכנים
   spree_gateway_error_flash_for_checkout: "There was a problem with your payment information. Please check your information and try again."
   ssl_will_be_used_in_development_and_test_modes: "SSL will be used in development and test mode if necessary."
   ssl_will_be_used_in_production_mode: "SSL will be used in production mode"

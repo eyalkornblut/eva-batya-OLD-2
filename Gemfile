@@ -48,7 +48,11 @@ group :production do
 	gem "pg", "~> 0.14.0"
 end
 
+gem 'aws-s3'
+
 gem 'spree', '~> 1.1.2'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 # gem 'spree_heroku', '1.0.0', :git => 'git://github.com/paxer/spree-heroku.git'
-gem 'aws-s3'
+gem 'spree_essentials', '~> 0.5.0'
+gem 'spree_essential_cms', '~> 0.4.0'
+gem 'spree_comments', :git => 'git@github.com:spree/spree_comments.git', :branch => 'master'

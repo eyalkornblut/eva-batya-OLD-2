@@ -6,6 +6,15 @@ GIT
       i18n (~> 0.5)
       spree (~> 1.1)
 
+GIT
+  remote: git@github.com:spree/spree_comments.git
+  revision: bee4e2130f564714da24beca78279f81554cc34a
+  branch: master
+  specs:
+    spree_comments (1.0.1)
+      acts_as_commentable (= 3.0.1)
+      spree_core (>= 0.70.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,6 +56,7 @@ GEM
     activesupport (3.2.6)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    acts_as_commentable (3.0.1)
     acts_as_list (0.1.4)
     arel (3.0.2)
     aws-s3 (0.6.2)
@@ -151,6 +161,7 @@ GEM
       actionpack (~> 3.0)
       activerecord (~> 3.0)
       polyamorous (~> 0.5.0)
+    rdiscount (1.6.8)
     rdoc (3.12)
       json (~> 1.4)
     sass (3.1.20)
@@ -195,6 +206,11 @@ GEM
       httparty (~> 0.8.1)
       spree_auth (= 1.1.2)
       spree_core (= 1.1.2)
+    spree_essential_cms (0.4.0)
+      spree_essentials (~> 0.5.0)
+    spree_essentials (0.5.0)
+      rdiscount (~> 1.6.8)
+      spree_core (~> 1.1.0)
     spree_promo (1.1.2)
       spree_auth (= 1.1.2)
       spree_core (= 1.1.2)
@@ -232,6 +248,9 @@ DEPENDENCIES
   rails (= 3.2.6)
   sass-rails (~> 3.2.3)
   spree (~> 1.1.2)
+  spree_comments!
+  spree_essential_cms (~> 0.4.0)
+  spree_essentials (~> 0.5.0)
   spree_i18n!
   sqlite3
   uglifier (>= 1.0.3)
