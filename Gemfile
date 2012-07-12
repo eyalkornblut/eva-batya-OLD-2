@@ -56,3 +56,6 @@ gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 gem 'spree_essentials', '~> 0.5.0'
 gem 'spree_essential_cms', '~> 0.4.0'
 gem 'spree_comments', :git => 'git://github.com/spree/spree_comments.git', :branch => 'master'
+gem 'spree_contact_us', '~> 1.1.0'
+gem 'spree_clean', :git => "git://github.com/spree/spree_clean.git"
+gem 'spree_related_products', :git => 'git://github.com/spree/spree_related_products.git'

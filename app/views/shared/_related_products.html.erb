@@ -1,0 +1,19 @@
+<div id="related-products"> 
+  <% Spree::RelationType.all.each do |rt| %> 
+    <% rel_products = @product.send(rt.name.downcase) %> 
+    <% if not rel_products.empty? %> 
+      <span class="title"><%= t(:related_products) %></span> 
+      <ul> 
+        <% rel_products.each do |product| %> 
+          <li class="related-product"> 
+            <%= link_to small_image(product), product_path(product) %> 
+            <%= product.name %> 
+          </li> 
+        <% end %> 
+      </ul> 
+    <% end %> 
+  <% end %> 
+</div> 
+
+
+

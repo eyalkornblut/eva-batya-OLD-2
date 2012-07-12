@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/spree/spree_clean.git
+  revision: 9bdefd5c7be7efc889cc6b67c45138aefcdf91a0
+  specs:
+    spree_clean (1.0.3)
+      spree_core (~> 1.1.0)
+
+GIT
   remote: git://github.com/spree/spree_comments.git
   revision: bee4e2130f564714da24beca78279f81554cc34a
   branch: master
@@ -14,6 +21,14 @@ GIT
     spree_i18n (1.0.0)
       i18n (~> 0.5)
       spree (~> 1.1)
+
+GIT
+  remote: git://github.com/spree/spree_related_products.git
+  revision: 29476a688b306b752186e552d26dda62fc9f2d6c
+  specs:
+    spree_related_products (3.2)
+      spree_core (~> 1.1.0)
+      spree_promo (~> 1.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -187,6 +202,8 @@ GEM
       spree_core (= 1.1.2)
     spree_cmd (1.1.2)
       thor (= 0.14.6)
+    spree_contact_us (1.1.0)
+      spree_core (>= 1.0.0)
     spree_core (1.1.2)
       activemerchant (= 1.20.4)
       acts_as_list (= 0.1.4)
@@ -248,9 +265,12 @@ DEPENDENCIES
   rails (= 3.2.6)
   sass-rails (~> 3.2.3)
   spree (~> 1.1.2)
+  spree_clean!
   spree_comments!
+  spree_contact_us (~> 1.1.0)
   spree_essential_cms (~> 0.4.0)
   spree_essentials (~> 0.5.0)
   spree_i18n!
+  spree_related_products!
   sqlite3
   uglifier (>= 1.0.3)
