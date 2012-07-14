@@ -1,0 +1,32 @@
+<header id="header" class="row" data-hook>
+
+  <div class="header-strip top">
+    <nav id="top-nav-bar" class="columns omega ten">
+      <ul id="nav-bar" class="inline" data-hook>
+        <%= render :partial => 'spree/shared/nav_bar' %>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header-strip main">
+    <figure id="logo" class="columns alpha six" data-hook>
+      <%= logo %>
+    </figure> 
+
+    <%= render :partial => 'shared/category_1' %>
+  </div>
+
+  <div class="header-strip bottom">
+    <% if store_menu? %>
+      <nav class="columns alpha omega sixteen">
+        <ul id="main-nav-bar" class="inline" data-hook>            
+          <%= render :partial => 'spree/shared/store_menu' %>
+        </ul>
+
+        <%= render :partial => 'shared/category_2' %>
+
+      </nav>
+    <% end %>
+  </div>
+      
+</header>

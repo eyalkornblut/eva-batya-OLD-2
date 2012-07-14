@@ -1,0 +1,65 @@
+#header {
+	background: #eee;
+	width: 100%;
+	.header-strip {
+		width: 90%;
+		margin: 0 auto;
+		&.top {
+			#top-nav-bar {
+				text-align: left;
+				margin-left: 0;
+				width: auto;
+				ul {
+					li {
+						padding: 0 10px 0 0;
+					}
+				}
+			}
+
+		}
+		&.main {
+			padding: 10px 0;
+			#logo {
+				width: 200px;
+				// height: 100px;
+				margin: 0 auto -120px auto;
+				float: none;
+				display: block;
+			}
+			nav {
+				text-align: center;
+				ul {
+					display: inline-block;
+					li {
+						background: #ddd;
+						height: 80px;
+						width: 100px;
+						text-align: center;
+						&.first-part-end{
+							margin-left: 105px;
+						}
+						&.second-part-start{
+							margin-right: 105px;
+						}
+					}
+				}
+			}
+		}
+		&.bottom {
+			ul {
+				li {
+					&#link-to-cart {
+						float: left;
+					}
+				}
+			}
+			
+		}
+		.taxons-list {
+			li {
+				float: right;
+				margin: 0 0.5em;
+			}
+		}
+	}
+}
