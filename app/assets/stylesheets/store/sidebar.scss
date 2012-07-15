@@ -1,0 +1,42 @@
+#sidebar{
+	float: right;
+	background: #eee;
+	margin: 0;
+	padding: 10px;
+	width: 292px;
+
+	// straching the sidebar to always match the content of the page.
+	margin-bottom: -5000px; 
+  	padding-bottom: 5000px; 
+
+	.taxon-name {
+		font-size: 28px;
+		margin: 5px 10px 16px;
+	}
+	ul#products {
+		li {
+			float: right;
+			margin: 0 5px 20px;
+			width: 136px;
+			height: 156px;
+			.product-image {
+				width: 136px;
+				height: 126px;
+				padding: 0;
+				a {
+					img {
+						margin: 10px;
+					}
+				}
+			}
+			a.info {
+				margin: 2px 0;
+				border: none;
+				font-size: 14px;
+			}
+			span.price{
+				display: none;
+			}
+		}
+	}
+}

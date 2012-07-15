@@ -1,3 +1,11 @@
-#main-container{
-	width: 100%;
+html {
+	body {
+		font-family: tahoma, sans-serif;
+		#main-container{
+			width: 100%;
+			#wrapper {
+				overflow: hidden;
+			}
+		}
+	}
 }
