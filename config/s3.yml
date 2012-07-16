@@ -1,12 +1,14 @@
-development: &DEFAULTS
-  bucket: "eva-batya"
-  access_key_id: "AKIAJVPADJAJIZZWVB7Q"
-  secret_access_key: "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"
+defaults: &defaults
+  s3_protocol: http
+  access_key_id: AKIAJVPADJAJIZZWVB7Q
+  secret_access_key: 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
+  bucket: Eva-Batya
+
+development:
+  <<: *defaults
 
 test:
-  <<: *DEFAULTS
-  bucket: "eva-batya"
+  <<: *defaults
 
 production:
-  <<: *DEFAULTS
-  bucket: "eva-batya"
+  <<: *defaults

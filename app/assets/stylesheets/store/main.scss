@@ -5,6 +5,12 @@ html {
 			width: 100%;
 			#wrapper {
 				overflow: hidden;
+				#content {
+					// background: green;
+					float: right;
+					width: 1000px;
+					margin: 0px;
+				}
 			}
 		}
 	}
