@@ -1,8 +1,28 @@
-.product-show {
-	padding: 20px;
+.product-show {	
+	padding: 8px 20px;
+	.product-main-part {
+		float: right;
+		width: 600px;
+	}
+	.product-additional-part {
+		float: right;
+	}
+
+	#product-images {
+		#product-thumbnails {
+			margin-top: -40px;
+		}
+	}
 	div [itemprop="description"] {
 		white-space: pre-line;
-		margin-top: -15px;
+		margin-top: -10px;
+		font-size: 14px;
+	}
+	div [data-hook="product_properties"] {
+		margin-top: 15px;
+		.product-section-title {
+			display: none;
+		}
 	}
 	#product-price {
 		float: right;
@@ -12,13 +32,33 @@
 		margin: 30px 10px 0px 0px;
 	}		
 	#related-products {
+		margin-top: 15px;
 		ul {
           	display: inline-block;
 			li {
 	            float: right;
 	            margin: 0 0.5em;
 	            text-align: center;
+				a.info {
+					margin: 2px 0;
+					font-size: 14px;
+					color: #BBB;
+					font-weight: bold;
+					overflow: hidden;
+				}
 			}
 		}
 	}
+    #taxon-crumbs {
+    	float: right;
+	    ul#similar_items_by_taxon {
+	        display: inline-block;
+	        li {
+	            float: right;
+	        	margin: 0 0.5em;
+	        	background: #ddd;
+	        	text-align: center;
+	        }
+	    }
+	  }
 }

@@ -2,13 +2,15 @@
   <% Spree::RelationType.all.each do |rt| %> 
     <% rel_products = @product.send(rt.name.downcase) %> 
     <% if not rel_products.empty? %> 
-      <span class="title"><%= t(:related_products) %></span> 
+      <h6 class="title"><%= t(:related_products) %></h6> 
       <ul> 
         <% rel_products.each do |product| %> 
-          <li class="related-product"> 
-            <%= link_to small_image(product), product_path(product) %> 
-            <%= product.name %> 
-          </li> 
+          <li itemtype="http://schema.org/Product">
+            <div class="product-image">
+              <%= link_to small_image(product, :itemprop => "image"), product, :itemprop => 'url', :remote => true %>
+            </div>
+            <%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name, :remote => true %>
+          </li>
         <% end %> 
       </ul> 
     <% end %> 

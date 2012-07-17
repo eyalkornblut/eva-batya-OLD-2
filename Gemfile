@@ -35,7 +35,11 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 group :development do
-
+	gem 'pry'
+	gem 'pry-doc'
+	gem 'pry-rails'
+	gem 'pry-nav'
+	gem 'pry-stack_explorer'
 end
 group :test do
 	#preaty printed test output
@@ -59,3 +63,4 @@ gem 'spree_comments', :git => 'git://github.com/spree/spree_comments.git', :bran
 gem 'spree_contact_us', '~> 1.1.0'
 gem 'spree_clean', :git => "git://github.com/spree/spree_clean.git"
 gem 'spree_related_products', :git => 'git://github.com/spree/spree_related_products.git'
+gem 'spree_slider'

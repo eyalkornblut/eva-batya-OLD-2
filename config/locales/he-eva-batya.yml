@@ -373,8 +373,8 @@ he-eva-batya:
         one: "Product group"
         other: "Product groups"
       property: 
-        one: Property
-        other: Properties
+        one: תכונה
+        other: תכונות
       prototype: 
         one: Prototype
         other: Prototypes
@@ -414,7 +414,7 @@ he-eva-batya:
       zone: 
         one: Zone
         other: Zones
-  add: Add
+  add: פלוס
   add_category: "Add Category"
   add_country: "Add Country"
   add_option_type: "Add Option Type"
@@ -706,7 +706,7 @@ he-eva-batya:
   login_failed: "Login authentication failed."
   login_name: Login
   logout: יציאה
-  look_for_similar_items: Look for similar items
+  look_for_similar_items: מוצרים דומים
   maestro_or_solo_cards: Maestro/Solo cards
   mail_delivery_enabled: "Mail delivery is enabled"
   mail_delivery_not_enabled: "Mail delivery is not enabled"
@@ -1272,7 +1272,7 @@ he-eva-batya:
     must_be_int: "must be an integer"
     must_be_non_negative: "must be a non-negative value"
   value: Value
-  variants: Variants
+  variants: גרסאות שונות
   vat: "VAT"
   version: Version
   view_shipping_options: "View shipping options"
