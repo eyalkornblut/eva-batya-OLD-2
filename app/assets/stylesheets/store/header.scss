@@ -1,5 +1,5 @@
 #header {
-  background: #eee;
+  background: rgba(255, 255, 255, 0.5);
   width: 100%;
   margin: 0;
   .header-strip {
@@ -34,7 +34,7 @@
           li {
             float: right;
             margin: 0 0.5em;
-            background: #ddd;
+            // background: #ddd;
             height: 80px;
             width: 100px;
             text-align: center;
@@ -43,6 +43,17 @@
             }
             &.second-part-start{
               margin-right: 105px;
+            }
+            a {
+              font-weight: bold;
+              font-size: 12px;
+              color: #555;
+              img {
+                border-radius: 16px;
+                border-style: outset;
+                border-width: 1px;
+                box-shadow: 0 1px 10px lightCoral;
+              }
             }
           }
         }
