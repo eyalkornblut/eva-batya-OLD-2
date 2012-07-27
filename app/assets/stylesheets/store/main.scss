@@ -1,17 +1,57 @@
 html {
 	body {
+		// main page games
+		// background-image: url("background.jpg");
+		// background-size: 100%;
+		#background {
+		    width: 100%; 
+		    height: 100%; 
+		    position: fixed; 
+		    left: 0px; 
+		    top: 0px; 
+		    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+			.stretch {
+			    width:100%;
+			}
+		}
+
 		font-family: tahoma, sans-serif;
 		#main-container{
 			width: 100%;
-			#wrapper {
-				overflow: hidden;
-				#content {
-					// background: green;
-					float: right;
-					width: 1000px;
-					margin: 0px;
+			// main page games
+			#header {
+				position: fixed;
+				top: 40%;
+				.header-strip {
+					&.top, &.bottom, &.category-2 {
+						display: none;
+					}
+					&.main {
+						height: 156px;
+						.commin-soon {
+							float: left;
+							font-size: 14px;
+							font-weight: bold;
+							padding: 10px 100px 0;
+						}
+					}
 				}
 			}
+			#wrapper {
+				display: none;
+			}
+			#footer {
+				display: none;
+			}
+			// #wrapper {
+			// 	overflow: hidden;
+			// 	#content {
+			// 		// background: green;
+			// 		float: right;
+			// 		width: 1000px;
+			// 		margin: 0px;
+			// 	}
+			// }
 		}
 	}
 }

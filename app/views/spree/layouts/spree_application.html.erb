@@ -13,6 +13,10 @@
 
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body" dir="rtl">
     
+    <div id="background">
+        <img src="background.jpg" class="stretch" alt="" />
+    </div>
+      
     <div id="main-container" class="container">
 
       <%= render :partial => 'spree/layouts/header' %>
