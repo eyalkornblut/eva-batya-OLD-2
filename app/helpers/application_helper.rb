@@ -17,10 +17,10 @@ module ApplicationHelper
         css_class += (current_taxon && current_taxon.self_and_ancestors.include?(taxon)) ? ' current' : ''
         content_tag :li, :class => css_class do
           # main page games
-          link_to(image_tag(taxon.icon.url(:normal)), '#') +
-          link_to(taxon.name, '#') +
-          # link_to(image_tag(taxon.icon.url(:normal)), seo_url(taxon)) +
-          # link_to(taxon.name, seo_url(taxon)) +
+          # link_to(image_tag(taxon.icon.url(:normal)), '#') +
+          # link_to(taxon.name, '#') +
+          link_to(image_tag(taxon.icon.url(:normal)), seo_url(taxon)) +
+          link_to(taxon.name, seo_url(taxon)) +
           divided_taxons_list(taxon, current_taxon, max_level - 1)
         end
       end.join("\n").html_safe

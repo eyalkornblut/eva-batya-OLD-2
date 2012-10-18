@@ -1,6 +1,6 @@
 html {
 	body {
-		// main page games
+/*		// main page games
 		// background-image: url("background.jpg");
 		// background-size: 100%;
 		#background {
@@ -9,16 +9,16 @@ html {
 		    position: fixed; 
 		    left: 0px; 
 		    top: 0px; 
-		    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+		    z-index: -1;  Ensure div tag stays behind content; -999 might work, too. 
 			.stretch {
 			    width:100%;
 			}
 		}
-
+*/
 		font-family: tahoma, sans-serif;
 		#main-container{
 			width: 100%;
-			// main page games
+/*			// main page games
 			#header {
 				position: fixed;
 				top: 40%;
@@ -44,15 +44,16 @@ html {
 			#footer {
 				display: none;
 			}
-			// #wrapper {
-			// 	overflow: hidden;
-			// 	#content {
-			// 		// background: green;
-			// 		float: right;
-			// 		width: 1000px;
-			// 		margin: 0px;
-			// 	}
-			// }
+*/
+			#wrapper {
+				overflow: hidden;
+			 	#content {
+			 		// background: green;
+			 		float: right;
+			 		width: 1000px;
+			 		margin: 0px;
+			 	}
+			}
 		}
 	}
 }
