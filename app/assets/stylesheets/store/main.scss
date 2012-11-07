@@ -48,12 +48,20 @@ html {
 			#wrapper {
 				overflow: hidden;
 			 	#content {
-			 		// background: green;
-			 		float: right;
-			 		width: 1000px;
-			 		margin: 0px;
-			 	}
+					float: none;
+					width: 90%;
+					margin: 0 auto;
+					display: block;
+				}
 			}
+			#footer {
+				/*overflow: hidden;*/
+				float: none;
+				width: 90%;
+				margin: 0 auto;
+				display: block;
+			}
+
 		}
 	}
 }

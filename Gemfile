@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.6'
+gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -54,13 +54,15 @@ end
 
 gem 'aws-s3'
 
-gem 'spree', '~> 1.1.2'
+gem 'spree', '~> 1.2.0'
+gem "spree_auth_devise", :git => "git://github.com/spree/spree_auth_devise", :branch => '1-2-stable'
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
 # gem 'spree_heroku', '1.0.0', :git => 'git://github.com/paxer/spree-heroku.git'
-gem 'spree_essentials', '~> 0.5.0'
-gem 'spree_essential_cms', '~> 0.4.0'
+gem 'spree_essentials', :git => 'git://github.com/pythonheads/spree_essentials.git'
+gem 'spree_essential_cms'
 gem 'spree_comments', :git => 'git://github.com/spree/spree_comments.git', :branch => 'master'
 gem 'spree_contact_us', '~> 1.1.0'
 gem 'spree_clean', :git => "git://github.com/spree/spree_clean.git"
 gem 'spree_related_products', :git => 'git://github.com/spree/spree_related_products.git'
 gem 'spree_slider'
+gem 'spree_last_address', :git => "git://github.com/dancinglightning/spree-last-address.git"

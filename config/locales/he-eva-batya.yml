@@ -227,7 +227,7 @@ he-eva-batya:
       address: 
         address1: Address
         address2: "Address (contd.)"
-        city: עיר
+        city: ישוב
         country: "Country"
         first_name_begins_with: "First Name Begins With"
         firstname: "First Name"
@@ -275,7 +275,7 @@ he-eva-batya:
         completed_at: "Completed At"
         coupon_code: "Coupon Code"
         ip_address: "IP Address"
-        item_total: "Item Total"
+        item_total: "סכום מוצרים"
         number: Number
         special_instructions: "Special Instructions"
         state: מדינה
@@ -433,7 +433,7 @@ he-eva-batya:
   adjustment: Adjustment
   adjustment_total: Adjustment Total
   adjustments: Adjustments
-  administration: Administration
+  administration: ניהול האתר
   all: "All"
   all_departments: All departments
   allow_backorders: "Allow Backorders"
@@ -472,23 +472,23 @@ he-eva-batya:
   available_on: "Available On"
   available_taxons: "Available Taxons"
   awaiting_return: Awaiting Return
-  back: Back
+  back: חזרה
   back_end: Back End
-  back_to_store: "Go Back To Store"
+  back_to_store: "חזרה לקונדיטוריה"
   backordered: Backordered
   backordering_is_allowed: "Backordering %{not} allowed"
-  balance_due: "Balance Due"
-  best_selling_products: "Best Selling Products"
-  best_selling_taxons: "Best Selling Taxons"
+  balance_due: "עדיין לא שולם"
+  best_selling_products: "המוצרים הנמכרים ביותר"
+  best_selling_taxons: "התחומים הנמכרים ביותר"
   bill_address: "כתובת למשלוח חבילה"
   billing: Billing
-  billing_address: "כתובת למשלוח חשבונית"
+  billing_address: "פרטי קשר"
   both: Both
   by_day: "by day"
   calculator: Calculator
   calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
-  cancel: cancel
-  cancel_my_account: Cancel my account
+  cancel: ביטול
+  cancel_my_account: בטל את החשבון שלי
   cancel_my_account_description: "Unhappy?"
   canceled: Canceled
   cannot_create_returns: Cannot create returns as this order has not shipped yet.
@@ -504,13 +504,13 @@ he-eva-batya:
   category: Category
   change: Change
   change_language: "שנה שפה"
-  change_my_password: "Change my password"
-  charge_total: Charge Total
-  charged: Charged
-  charges: Charges
-  checkout: תשלום
-  cheque: Cheque
-  city: עיר
+  change_my_password: "עדכן את הסיסמא"
+  charge_total: חיוב כולל
+  charged: חויב
+  charges: חיובים
+  checkout: הזמנה
+  cheque: צק
+  city: ישוב
   clone: Clone
   code: Code
   combine: Combine
@@ -522,7 +522,7 @@ he-eva-batya:
   configured: Configured
   confirm: אישור
   confirm_delete: "Confirm Deletion"
-  confirm_password: "Password Confirmation"
+  confirm_password: "אישור סיסמא"
   continue: המשך
   continue_shopping: "בחזרה לחנות"
   copy_all_mails_to: Copy All Mails To
@@ -534,7 +534,7 @@ he-eva-batya:
   coupon: Coupon
   coupon_code: Coupon code
   create: Create
-  create_a_new_account: "Create a new account"
+  create_a_new_account: "משתמש חדש"
   create_product_group_from_products: Create a new product group from these products
   create_user_account: "יצירת חשבון משתמש"
   created_successfully: "נוצר בהצלחה"
@@ -601,8 +601,8 @@ he-eva-batya:
       could_not_create_taxon: "Could not create taxon"
       no_shipping_methods_available: "No shipping methods available for selected location, please change your address and try again."
   errors_prohibited_this_record_from_being_saved: 
-    one: "1 error prohibited this record from being saved"
-    other: "%{count} errors prohibited this record from being saved"
+    one: "השגיעה הבאה מנעה את שמירת הנתונים"
+    other: "%{count} שגיעות מנעו את שמירת הנתונים"
   event: Event
   existing_customer: "משתמש קיים"
   expiration: "תאריך תפוגה"
@@ -672,7 +672,7 @@ he-eva-batya:
   issue_number: Issue Number
   item: פריט
   item_description: "תיאור הפריט"
-  item_total: "Item Total"
+  item_total: "סכום מוצרים"
   item_total_rule: 
     operators: 
       gt: greater than
@@ -701,7 +701,7 @@ he-eva-batya:
   logged_in_as: "Logged in as"
   logged_in_succesfully: "Logged in successfully"
   logged_out: "You have been logged out."
-  login: Login
+  login: התחברות
   login_as_existing: "Log In as Existing Customer"
   login_failed: "Login authentication failed."
   login_name: Login
@@ -787,7 +787,7 @@ he-eva-batya:
   option_value: "Option Value"
   option_values: "Option Values"
   options: Options
-  or: or
+  or: או
   ord_qty: "Ord. Qty"
   ord_total: "Ord. Total"
   order: Order
@@ -807,18 +807,18 @@ he-eva-batya:
   order_processed_successfully: "Your order has been processed successfully"
   order_state: # keys correspond to Checkout state names:
     # keys correspond to Checkout state names: 
-    address: address
+    address: פרטי קשר
     adjustments: adjustments
     awaiting_return: awaiting return
     canceled: canceled
     cart: cart
-    complete: complete
-    confirm: confirm
+    complete: סיכום
+    confirm: אישור
     delivery: delivery
     payment: payment
     resumed: resumed
     returned: returned
-  order_summary: Order Summary
+  order_summary: תקציר הזמנה
   order_sure_want_to: "Are you sure you want to %{event} this order?"
   order_total: "סכום כולל"
   order_total_message: "The total amount charged to your card will be"
@@ -832,7 +832,7 @@ he-eva-batya:
   overview_welcome: "Welcome to your store overview, currently we do not have enough data to display the Overiew Dashboard.<br/><br/> The dashboard will display automatically once the system has sufficent orders to allow generation of the statistics."
   page_only_viewable_when_logged_in: You attempted to visit a page which can only be viewed when you are logged in
   page_only_viewable_when_logged_out: You attempted to visit a page which can only be viewed when you are logged out
-  paid: Paid
+  paid: שולם
   parent_category: "Parent Category"
   password: סיסמה
   password_reset_instructions: "הוראות לחידוש סיסמה"
@@ -851,12 +851,12 @@ he-eva-batya:
   payment_processing_failed: "Payment could not be processed, please check the details you entered"
   payment_state: Payment State
   payment_states: 
-    balance_due: balance due
+    balance_due: עדיין לא שולם
     checkout: checkout
     completed: completed
     credit_owed: credit owed
     failed: failed
-    paid: paid
+    paid: שולם
     pending: pending
     processing: processing
     void: void
@@ -876,7 +876,7 @@ he-eva-batya:
   price_with_vat_included: "%{price} (inc. VAT)"
   problem_authorizing_card: "Problem authorizing credit card"
   problem_capturing_card: "Problem capturing credit card"
-  problems_processing_order: "We had problems processing your order"
+  problems_processing_order: "חווינו שגיאות בעיבוד ההזמנה"
   proceed_as_guest: "לא תודה, המשך כאורח"
   process: Process
   product: Product
@@ -884,7 +884,7 @@ he-eva-batya:
   product_group: Product Group
   product_group_invalid: Product Group has invalid scopes
   product_groups: Product Groups
-  product_has_no_description: Product has not description
+  product_has_no_description: למוצר אין תיאור עדיין
   product_properties: "Product Properties"
   product_rule: 
     choose_products: Choose products
@@ -1023,7 +1023,7 @@ he-eva-batya:
       name: First order
     item_total: 
       description: Order total meets these criteria
-      name: Item total
+      name: סכום מוצרים
     product: 
       description: Order includes specified product(s)
       name: Product(s)
@@ -1081,7 +1081,7 @@ he-eva-batya:
   sales_tax: "Sales Tax"
   sales_total: "Sales Total"
   sales_total_description: "Sales Total For All Orders"
-  save_and_continue: Save and Continue
+  save_and_continue: שמור והמשך
   save_preferences: Save Preferences
   scope: Scope
   scopes: Scopes
@@ -1225,7 +1225,7 @@ he-eva-batya:
   test: "Test"
   test_mode: Test Mode
   thank_you_for_your_order: "Thank you for your business.  Please print out a copy of this confirmation page for your records."
-  there_were_problems_with_the_following_fields: "There were problems with the following fields"
+  there_were_problems_with_the_following_fields: "חלק מהשדות לא מולאו כנדרש, אנא מלאו את הנתונים מחדש"
   this_file_language: "עִבְרִית (IL)"
   this_month: "This Month"
   this_year: "This Year"
@@ -1287,7 +1287,7 @@ he-eva-batya:
   year: "Year"
   you_have_been_logged_out: "You have been logged out."
   you_have_no_orders_yet: "You have no orders yet."
-  your_cart_is_empty: "Your cart is empty"
+  your_cart_is_empty: "העגלה ריקה"
   zip: מיקוד
   zone: Zone
   zone_based: "Zone Based"

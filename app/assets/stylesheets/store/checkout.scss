@@ -1,0 +1,31 @@
+#checkout {
+	h1[data-hook*="checkout_title"] {
+		float: right;
+	}
+	div[data-hook*="checkout_progress"] {
+		float: right;
+	}
+	.progress-steps li {
+		float: right;
+	}
+	#checkout_form_address {
+		#shipping {
+			display: none;
+		}
+		#billing {
+			#baddress1, #baddress2, #bcountry, #bstate, #bzipcode{
+				display: none;
+			}
+		}
+	}
+	#checkout_form_confirm {
+		#order_details{
+			.steps-data {
+				display: none;
+			}
+			hr{
+				display: none;
+			}			
+		}
+	}
+}

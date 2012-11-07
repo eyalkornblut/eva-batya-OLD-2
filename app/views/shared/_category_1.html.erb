@@ -1,7 +1,9 @@
 <nav id="taxonomy_cat_1" class="sidebar-item" data-hook>
-  <% get_taxonomies.each do |taxonomy| %>
-  	<% if taxonomy.name == "Category_1" %>
-	    <%= divided_taxons_list(taxonomy.root, @taxon, Spree::Config[:max_level_in_taxons_menu] || 1) %>
-	<% end %>
+	<% if defined?(get_taxonomies) %>
+	  <% get_taxonomies.each do |taxonomy| %>
+	  	<% if taxonomy.name == "Category_1" %>
+		    <%= divided_taxons_list(taxonomy.root, @taxon, Spree::Config[:max_level_in_taxons_menu] || 1) %>
+			<% end %>
+	  <% end %>
   <% end %>
 </nav>
